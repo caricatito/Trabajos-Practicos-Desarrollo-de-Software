@@ -1,0 +1,1 @@
+Profesor Alberto Cortez aqui le entrego el tp realizado en HTML, algunas metodologias utilizadas son distintas a las ya mencionadas, ya que los textos pueden manipularse de varias maneras para llegar al mismo resultado.
