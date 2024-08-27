@@ -1,0 +1,149 @@
+h1{
+    text-align: center;
+    text-transform:capitalize;
+    text-decoration: underline;
+    font-size: large;
+    background-color: gray;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 4px;
+}
+.Albert{
+    text-align:end;
+    font-size: smaller;
+    color: gray;
+    background-color: beige;
+    border: 3px double black;
+    font-style: italic;
+}
+#hola{
+    text-align: left;
+    text-transform:initial;
+    font-size: medium;
+    text-decoration: underline double;
+}
+h2{
+    text-align: left;
+    text-transform:capitalize;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+#box1{
+    background-color: skyblue;
+    border: 2px solid;
+    border-color: black;
+    border-radius: 3px;
+    padding: 3px;
+    margin: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 5px 1px;
+}
+#box2{
+    border: 1px solid ;
+    border-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 5px 1px;
+    background-color: beige;
+}
+#relativo{
+    font-size: larger;
+    width: 1000px;
+    height: 100px;
+    position: relative;
+    top: 10px;
+    left: 1px;
+    background-color: beige;
+    border: 1px solid black;
+    padding: 3px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 5px;    
+    font-family: 'Courier New', Courier, monospace;
+}
+#absoluto{
+    color: white;
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    top: 420px;
+    left: 600px;
+    background-color: skyblue;
+    border: 1px ;
+    border-radius: 10px;
+    padding: 3px;
+    width: 350px;
+}
+@media screen and (max-height: 768px) {
+    body{
+        background-color: brown;
+    }
+    h1{
+        font-size: small;
+    }
+    h2{
+        font-size: x-small;
+    }
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    padding: 1px;
+}
+
+.grid-item{
+    background-color: beige;
+    border: 1px solid black;
+    height: 50px;
+    width: 250px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1px;
+}
+
+.Animacion{
+    background-color: brown;
+    height: 50px;
+    width: 50px;
+    border: 1px solid;
+    padding: 10px;
+    transition: 1s;
+    top: 1px;
+
+}
+
+.Animacion:hover {
+    background-color: black;
+}
+
+.Mover{
+    background-color: green;
+    height: 50px;
+    width: 50px;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 100px;
+    position: relative;
+    top: 20px;
+    animation: mover 3s infinite;
+}
+
+@keyframes mover {
+0%{
+    transform: translateX(0px);
+}
+25%{
+    transform: translateX(200px);
+}
+50%{
+    transform: translateX(125px);
+}
+75%{
+    transform: translateX(200px);
+}
+100%{
+    transform: translateX(0px);
+}
+}
